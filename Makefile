@@ -76,3 +76,6 @@ bootstrap:
 	make build
 	cd packages/babel-runtime; \
 	node scripts/build-dist.js
+
+license-check:
+	./node_modules/.bin/license-to-fail

@@ -6,7 +6,8 @@
     "test": "make test",
     "build": "make build",
     "lint": "make lint",
-    "fix": "make fix"
+    "fix": "make fix",
+    "license-check": "make license-check"
   },
   "devDependencies": {
     "async": "^1.5.0",
@@ -36,6 +37,7 @@
     "gulp-watch": "^4.3.5",
     "lerna": "^2.0.0-beta.38",
     "lerna-changelog": "^0.2.0",
+    "license-to-fail": "^2.2.0",
     "lodash": "^4.2.0",
     "mocha": "^3.0.0",
     "nyc": "^10.0.0",
@@ -81,5 +83,17 @@
     ],
     "sourceMap": false,
     "instrument": false
+  },
+  "license-to-fail": {
+    "allowedLicenses": [
+      "MIT",
+      "BSD",
+      "ISC",
+      "Apache-2.0",
+      "Public Domain",
+      "WTFPL",
+      "Unlicense",
+      "Apache License, Version 2.0"
+    ]
   }
 }
